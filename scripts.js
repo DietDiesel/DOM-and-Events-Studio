@@ -49,7 +49,7 @@ function moveRocket(direction) {
     }
     rocketAltitude = 1 - (parseInt(window.getComputedStyle(document.getElementById("rocket")).top) / (shuttleBGheight - rocketPngOffset));
     rocketAltitude = Math.floor(rocketAltitude * 100) * 100;
-    document.getElementById("spaceShuttleHeight").innerHTML = rocketAltitude;
+    document.getElementById("spaceShuttleHeight").innerHTML = rocketAltitude + " miles";
 }
 
 document.getElementById("rocket").style.position = "absolute";
